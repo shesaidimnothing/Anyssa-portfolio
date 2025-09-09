@@ -17,13 +17,6 @@ export default function Hero() {
           <div className="bg-gray-100 rounded-lg overflow-hidden w-48 h-60 sm:w-64 sm:h-80 relative">
             {/* Background Project Image */}
             <div className="absolute inset-0">
-              <Image
-                src="/images/projects/branding/by-sohna.jpg"
-                alt="Latest Project - By Sohna"
-                fill
-                className="object-cover"
-                sizes="(max-width: 640px) 192px, 256px"
-              />
               <div className="absolute inset-0 bg-black/40" />
             </div>
             
@@ -33,11 +26,11 @@ export default function Hero() {
                 <div className="text-xs sm:text-sm mb-3 sm:mb-4 font-medium">Latest Project</div>
                 <div className="w-full h-24 sm:h-32 bg-white/10 backdrop-blur-sm rounded mb-3 sm:mb-4 flex items-center justify-center overflow-hidden relative">
                   <Image
-                    src="/images/projects/social-media/Anyssa.jpg"
+                    src="/images/projects/social-media/Anyssa.jpeg"
                     alt="Anyssa Portfolio"
                     fill
                     className="object-cover"
-                    sizes="(max-width: 640px) 96px, 128px"
+                    sizes="(max-width: 1000px) 128px, 256px"
                   />
                 </div>
                 <div className="text-xs opacity-90 font-medium">Creative Design</div>
