@@ -25,7 +25,7 @@ export default function Header() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Link href="/" className="flex items-center z-20 relative">
+          <Link href="/" className="flex items-center z-[60] relative">
             <motion.div 
               className="bg-black text-white px-4 py-2 rounded text-sm font-medium"
               whileHover={{ scale: 1.05 }}
@@ -79,7 +79,7 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <motion.button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="lg:hidden z-20 relative w-6 h-6 flex flex-col justify-center items-center"
+          className="lg:hidden z-[60] relative w-6 h-6 flex flex-col justify-center items-center"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3, delay: 0.5 }}
@@ -94,7 +94,7 @@ export default function Header() {
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div 
-              className="fixed inset-0 bg-gray-50 z-10 lg:hidden"
+              className="fixed inset-0 bg-gray-50 z-50 lg:hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
