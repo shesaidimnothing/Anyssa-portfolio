@@ -38,7 +38,7 @@ export default function Inquiries() {
             <AnimatedSection>
               <div>
                 <h1 className="text-5xl lg:text-6xl font-light leading-tight text-black mb-8">
-                  Inquiries
+                  Inquiries 💌
                 </h1>
                 <p className="text-xl text-gray-600 mb-8">
                   Ready to create something extraordinary? Let&apos;s discuss your project 

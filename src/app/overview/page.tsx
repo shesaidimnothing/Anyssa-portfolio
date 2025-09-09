@@ -14,7 +14,7 @@ export default function Overview() {
           <AnimatedSection>
             <div>
               <h1 className="text-5xl lg:text-6xl font-light leading-tight text-black mb-8">
-                About Me
+                About Me ✨
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl">
                 Hi, I&apos;m Anyssa! A passionate creative designer who brings ideas to life 
@@ -66,7 +66,7 @@ export default function Overview() {
           {/* Creative Tools & Skills */}
           <AnimatedSection>
             <section>
-              <h2 className="text-3xl font-light mb-12 text-black">My Creative Toolkit</h2>
+              <h2 className="text-3xl font-light mb-12 text-black">🛠️ My Creative Toolkit ✨</h2>
               <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <motion.div className="space-y-3" variants={staggerItemVariants}>
                   <h3 className="text-lg font-medium text-black">Design Tools</h3>
@@ -99,7 +99,7 @@ export default function Overview() {
           {/* Social Platforms */}
           <AnimatedSection>
             <section>
-              <h2 className="text-3xl font-light mb-12 text-black">Where You Can Find Me</h2>
+              <h2 className="text-3xl font-light mb-12 text-black">🌟 Where You Can Find Me 🌟</h2>
               <StaggerContainer className="grid grid-cols-2 md:grid-cols-5 gap-6">
                 <motion.a 
                   href="https://instagram.com" 

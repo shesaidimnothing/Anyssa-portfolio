@@ -28,7 +28,7 @@ export default function Blog() {
           <AnimatedSection>
             <div>
               <h1 className="text-5xl lg:text-6xl font-light leading-tight text-black mb-8">
-                Blog
+                Blog 📝✨
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl">
                 Behind-the-scenes insights into my creative process, tool tutorials, and practical tips 
@@ -77,7 +77,7 @@ export default function Blog() {
           {/* Topics */}
           <AnimatedSection>
             <section>
-              <h2 className="text-3xl font-light mb-12 text-black">What I Cover</h2>
+              <h2 className="text-3xl font-light mb-12 text-black">📚 What I Cover ✨</h2>
               <StaggerContainer className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {topics.map((topic, index) => (
                   <motion.div 

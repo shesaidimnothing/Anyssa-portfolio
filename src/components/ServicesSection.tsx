@@ -19,7 +19,55 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="w-full max-w-7xl mx-auto px-6 py-16">
+    <section className="w-full max-w-7xl mx-auto px-6 py-16 relative overflow-hidden">
+      {/* Background Decorative Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <motion.div
+          className="absolute top-16 right-12 text-lg opacity-12"
+          animate={{
+            y: [0, -12, 0],
+            rotate: [0, 8, 0],
+          }}
+          transition={{
+            duration: 4.5,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        >
+          ⭐
+        </motion.div>
+        <motion.div
+          className="absolute bottom-24 left-20 text-xl opacity-15"
+          animate={{
+            y: [0, -18, 0],
+            rotate: [0, -12, 0],
+          }}
+          transition={{
+            duration: 5.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2
+          }}
+        >
+          ✨
+        </motion.div>
+        <motion.div
+          className="absolute top-1/2 right-1/3 text-sm opacity-8"
+          animate={{
+            y: [0, -6, 0],
+            rotate: [0, 20, 0],
+          }}
+          transition={{
+            duration: 7,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }}
+        >
+          🌟
+        </motion.div>
+      </div>
+
       {/* Section Number */}
       <AnimatedSection delay={0.1}>
         <div className="text-sm text-gray-400 mb-8">(01)</div>
@@ -28,7 +76,7 @@ export default function ServicesSection() {
       {/* Section Title */}
       <AnimatedSection delay={0.2}>
         <h2 className="text-3xl lg:text-4xl font-light mb-12 text-black">
-          Creative Services
+          ✨ Creative Services ✨
         </h2>
       </AnimatedSection>
 

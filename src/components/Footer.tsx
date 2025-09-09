@@ -9,10 +9,10 @@ export default function Footer() {
         {/* Company Info */}
         <div className="space-y-4">
           <div className="bg-black text-white px-4 py-2 rounded text-sm font-medium inline-block">
-            Anyssa
+            ✨ Anyssa ✨
           </div>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Creative designer crafting stunning visuals and content that tell your story beautifully.
+            Creative designer crafting stunning visuals and content that tell your story beautifully. 🎨✨
           </p>
           {/* Social Media Links */}
           <div className="flex space-x-4 pt-2">

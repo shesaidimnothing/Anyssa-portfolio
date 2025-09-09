@@ -47,7 +47,7 @@ export default function Services() {
           <AnimatedSection>
             <div>
               <h1 className="text-5xl lg:text-6xl font-light leading-tight text-black mb-8">
-                Services
+                Services ⭐
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl">
                 Creative design services that bring your brand to life across all digital platforms.

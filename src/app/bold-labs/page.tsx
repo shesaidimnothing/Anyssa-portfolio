@@ -5,20 +5,22 @@ import ProjectGallery, { anyssaProjects } from '@/components/ProjectGallery';
 import FeaturedProject from '@/components/FeaturedProject';
 import AnimatedSection from '@/components/AnimatedSection';
 import StaggerContainer, { staggerItemVariants } from '@/components/StaggerContainer';
+import BackgroundDecorations from '@/components/BackgroundDecorations';
 import { motion } from 'framer-motion';
 
 export default function Portfolio() {
 
   return (
     <PageLayout>
-      <main className="w-full max-w-7xl mx-auto px-6 py-16">
-        <div className="space-y-16">
+      <main className="w-full max-w-7xl mx-auto px-6 py-16 relative">
+        <BackgroundDecorations variant="default" />
+        <div className="space-y-16 relative z-10">
           {/* Page Title */}
           <AnimatedSection>
             <div>
-              <h1 className="text-5xl lg:text-6xl font-light leading-tight text-black mb-8">
-                Portfolio
-              </h1>
+            <h1 className="text-5xl lg:text-6xl font-light leading-tight text-black mb-8">
+              Portfolio 🎨
+            </h1>
               <p className="text-xl text-gray-600 max-w-3xl">
                 A showcase of my creative work across branding, digital content, and video production. 
                 Each project tells a unique story through thoughtful design and strategic creativity.
