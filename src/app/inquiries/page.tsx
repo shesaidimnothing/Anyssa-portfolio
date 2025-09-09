@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import PageLayout from '@/components/PageLayout';
+import AnimatedSection from '@/components/AnimatedSection';
+import { motion } from 'framer-motion';
 
 export default function Inquiries() {
   const [formData, setFormData] = useState({
@@ -33,49 +35,58 @@ export default function Inquiries() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left Column - Info */}
           <div className="space-y-8">
-            <div>
-              <h1 className="text-5xl lg:text-6xl font-light leading-tight text-black mb-8">
-                Inquiries
-              </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Ready to create something extraordinary? Let&apos;s discuss your project 
-                and explore how we can bring your vision to life.
-              </p>
-            </div>
-
-            <div className="space-y-6">
+            <AnimatedSection>
               <div>
-                <h3 className="text-lg font-medium text-black mb-2">What to Expect</h3>
-                <p className="text-gray-600">
-                  We&apos;ll review your inquiry within 24 hours and schedule a consultation 
-                  to discuss your project in detail.
+                <h1 className="text-5xl lg:text-6xl font-light leading-tight text-black mb-8">
+                  Inquiries
+                </h1>
+                <p className="text-xl text-gray-600 mb-8">
+                  Ready to create something extraordinary? Let&apos;s discuss your project 
+                  and explore how we can bring your vision to life.
                 </p>
               </div>
+            </AnimatedSection>
 
-              <div>
-                <h3 className="text-lg font-medium text-black mb-2">Our Process</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Initial consultation and project discovery</li>
-                  <li>• Strategic planning and proposal development</li>
-                  <li>• Design and development execution</li>
-                  <li>• Launch and ongoing support</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-medium text-black mb-2">Contact Information</h3>
-                <div className="space-y-1 text-gray-600">
-                  <p>hello@anyssa.design</p>
-                  <p>Available for freelance projects</p>
-                  <p>Creative Designer</p>
+            <div className="space-y-6">
+              <AnimatedSection delay={0.1}>
+                <div>
+                  <h3 className="text-lg font-medium text-black mb-2">What to Expect</h3>
+                  <p className="text-gray-600">
+                    I&apos;ll review your inquiry within 24 hours and schedule a consultation 
+                    to discuss your project in detail.
+                  </p>
                 </div>
-              </div>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.2}>
+                <div>
+                  <h3 className="text-lg font-medium text-black mb-2">My Process</h3>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Initial consultation and project discovery</li>
+                    <li>• Strategic planning and proposal development</li>
+                    <li>• Design and development execution</li>
+                    <li>• Launch and ongoing support</li>
+                  </ul>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection delay={0.3}>
+                <div>
+                  <h3 className="text-lg font-medium text-black mb-2">Contact Information</h3>
+                  <div className="space-y-1 text-gray-600">
+                    <p>hello@anyssa.design</p>
+                    <p>Available for freelance projects</p>
+                    <p>Creative Designer</p>
+                  </div>
+                </div>
+              </AnimatedSection>
             </div>
           </div>
 
           {/* Right Column - Form */}
-          <div className="bg-white p-8 rounded-lg shadow-sm">
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <AnimatedSection delay={0.2}>
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -178,14 +189,17 @@ export default function Inquiries() {
                 />
               </div>
 
-              <button
+              <motion.button
                 type="submit"
                 className="w-full bg-black text-white py-3 rounded hover:bg-gray-800 transition-colors font-medium"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 Send Inquiry
-              </button>
+              </motion.button>
             </form>
-          </div>
+            </div>
+          </AnimatedSection>
         </div>
       </main>
     </PageLayout>

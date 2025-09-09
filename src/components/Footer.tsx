@@ -65,7 +65,7 @@ export default function Footer() {
         <div className="space-y-4">
           <h3 className="text-sm font-medium text-black">Contact</h3>
           <div className="space-y-2 text-sm text-gray-600">
-            <p>hello@anyssa.design</p>
+            <p>anyssa.bl4@gmail.com</p>
             <p>Available for freelance projects</p>
             <p>Creative Designer</p>
           </div>

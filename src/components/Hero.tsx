@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -13,14 +14,33 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="bg-gray-100 rounded-lg overflow-hidden w-48 h-60 sm:w-64 sm:h-80">
-            <div className="w-full h-full bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center">
+          <div className="bg-gray-100 rounded-lg overflow-hidden w-48 h-60 sm:w-64 sm:h-80 relative">
+            {/* Background Project Image */}
+            <div className="absolute inset-0">
+              <Image
+                src="/images/projects/branding/by-sohna.jpg"
+                alt="Latest Project - By Sohna"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 192px, 256px"
+              />
+              <div className="absolute inset-0 bg-black/40" />
+            </div>
+            
+            {/* Content Overlay */}
+            <div className="relative z-10 w-full h-full flex items-center justify-center">
               <div className="text-white text-center p-6 sm:p-8">
-                <div className="text-xs sm:text-sm mb-3 sm:mb-4">Latest Project</div>
-                <div className="w-full h-24 sm:h-32 bg-white/20 rounded mb-3 sm:mb-4 flex items-center justify-center">
-                  <div className="text-xs opacity-90">Your Image Here</div>
+                <div className="text-xs sm:text-sm mb-3 sm:mb-4 font-medium">Latest Project</div>
+                <div className="w-full h-24 sm:h-32 bg-white/10 backdrop-blur-sm rounded mb-3 sm:mb-4 flex items-center justify-center overflow-hidden relative">
+                  <Image
+                    src="/images/projects/social-media/Anyssa.jpg"
+                    alt="Anyssa Portfolio"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 96px, 128px"
+                  />
                 </div>
-                <div className="text-xs opacity-80">Creative Design</div>
+                <div className="text-xs opacity-90 font-medium">Creative Design</div>
               </div>
             </div>
           </div>
